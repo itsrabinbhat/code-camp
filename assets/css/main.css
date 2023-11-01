@@ -61,16 +61,13 @@ main{
     position: relative;
 }
 
-/*main div{*/
-/*    min-height: 30vh;*/
-/*    margin: 2em 0;*/
-/*    padding: 1em;*/
-/*}*/
+
+/*Styling for homepage/ showcase section*/
 
 #showcase{
     background-image: url('../img/showcase-bg.png');
     background-size: cover;
-    margin-top: 0;
+    margin-top: 1em;
     height: 76vh;
     position: relative;
     z-index: -2;
@@ -78,6 +75,7 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 1em
 }
 
 #showcase::after{
@@ -128,8 +126,22 @@ button:hover{
     cursor: pointer;
 }
 
-#event-details{
+main section{
     margin-top: 3em;
+}
+
+main h1{
+    text-align: center;
+}
+
+
+/*Styling for event details section*/
+
+#event-details{
+    padding: 1em;
+    margin: 2em 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 #event-details div{
@@ -139,13 +151,83 @@ button:hover{
 
 #event-details h3{
     margin: 1em 0;
-    font-size: 1.5em;
 }
 
 
+/*Styling for gallery section*/
+
+#gallery{
+    padding: 1em;
+    margin: 2em 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#gallery .container{
+    margin-top: 2em;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#gallery figure{
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#gallery img{
+    width: 90%;
+    margin: 2em;
+    border-radius: 10px;
+    opacity: 0.7;
+    transition: all .3s  ease-in-out;
+}
+
+#gallery img:hover{
+    opacity: 1;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+/*Styling for schedule section*/
+
+#schedule{
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#schedule table{
+    width: 90%;
+    margin: 4em auto;
+    border-collapse: collapse;
+}
+
+#schedule th, #schedule td{
+    border: 1px solid #ddd;
+    padding: 0.8em;
+    text-align: left;
+}
+
+#schedule th{
+    background-color: #09C1EE;
+    color: #fff;
+    font-size: 1.2em;
+
+}
+
+
+/*Styling for location section*/
+
 
 #location{
-    margin-top: 4em;
+    padding: 2em 3em;
+    margin: 2em 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 #location .address-container{
@@ -159,6 +241,7 @@ button:hover{
 #location .address-container address{
     max-width: 400px;
     text-align: center;
+    font-size: 18px;
 }
 #location .address-container iframe{
     border: 2px solid #09C1EE;
@@ -166,6 +249,9 @@ button:hover{
     width: 800px;
     height: 500px;
 }
+
+
+/*Styling for footer section*/
 
 footer{
     background-color: #09C1EE;
