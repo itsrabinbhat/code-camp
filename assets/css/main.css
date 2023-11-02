@@ -260,3 +260,41 @@ footer{
     margin-top: 5em;
     text-align: center;
 }
+
+/* Styling for testimonial section */
+
+#testimonials .testimonials-container{
+    margin-top: 5em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+    justify-content: space-around;
+}
+
+#testimonials img{
+    border-radius: 50%;
+    width: 45%;
+    height: auto;
+}
+.test{
+    width: 30%;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding-bottom: 3em;
+}
+.content-box{
+    width: 100%;
+}
+.test-content{
+    text-align: center;
+    padding: 1em;
+}
+.test-content h3{
+    margin-top: 1em;
+}
+.test-content p{
+    margin-top: 1vh;
+    text-align: center;
+
+}
