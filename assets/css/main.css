@@ -121,17 +121,15 @@ main{
     border: none;
 }
 
-button:hover{
-    transform: scale(0.98);
-    cursor: pointer;
-}
-
 main section{
     margin-top: 3em;
 }
 
 main h1{
     text-align: center;
+    color: #09C1EE;
+    text-transform: uppercase;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -153,6 +151,54 @@ main h1{
     margin: 1em 0;
 }
 
+/*Styling for guests section*/
+
+#guests{
+    padding: 1em;
+    margin: 4em 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#guests .container{
+    margin-top: 2em;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#guests .guest{
+    width: 30%;
+    text-align: center;
+    margin: 1.2em auto;
+    padding: 2em;
+    transition: all 0.3s ease-in-out;
+}
+
+#guests .guest:hover{
+    background-color: rgba(9, 193, 238, 0.2);
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#guests h3{
+    margin: 0.2em auto;
+}
+
+#guests p strong{
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+#guests img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
+
+
 
 /*Styling for gallery section*/
 
@@ -164,22 +210,28 @@ main h1{
 }
 
 #gallery .container{
-    margin-top: 2em;
+    margin: 2em 0;
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    position: relative;
+    overflow: hidden;
 }
+
 
 #gallery figure{
     width: 30%;
     height: auto;
+    margin: 1.66%;
     border-radius: 10px;
+    float: left;
+
+}
+
+#gallery figcaption{
+    text-align: center;
 }
 
 #gallery img{
     width: 90%;
-    margin: 2em;
     border-radius: 10px;
     opacity: 0.7;
     transition: all .3s  ease-in-out;
@@ -188,8 +240,9 @@ main h1{
 #gallery img:hover{
     opacity: 1;
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(1.03);
 }
+
 
 
 /*Styling for schedule section*/
@@ -217,6 +270,10 @@ main h1{
     color: #fff;
     font-size: 1.2em;
 
+}
+
+#schedule tr:nth-child(even){
+    background-color: #09c0ee31;
 }
 
 
@@ -259,6 +316,7 @@ footer{
     padding: 2em;
     margin-top: 5em;
     text-align: center;
+    border-radius: 8px;
 }
 
 /* Styling for testimonial section */
@@ -268,7 +326,7 @@ footer{
     display: flex;
     flex-wrap: wrap;
     flex-basis: 50%;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 #testimonials img{
